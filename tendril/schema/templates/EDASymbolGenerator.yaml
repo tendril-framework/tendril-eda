@@ -1,0 +1,13 @@
+---
+schema:
+  base: "http://tendril.chintal.in/schema/"
+  name: {{ stage.schema_name }}
+  version: {{ stage.schema_version }}
+
+type: simple
+
+values:
+  - {{ stage.value }}
+
+symbolfile: {{ stage.symbolfile }}
+desc: {{ stage.description }}
