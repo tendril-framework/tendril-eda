@@ -31,7 +31,7 @@ from tendril.conventions.series import CustomValueSeries
 from tendril.schema.base import SchemaControlledYamlFile
 from tendril.schema.base import NakedSchemaObject
 from tendril.schema.helpers import SchemaObjectList
-from tendril.schema.helpers import SchemaObjectSet
+from tendril.schema.helpers import SchemaObjectMapping
 
 from tendril.utils.types.electromagnetic import Resistance
 from tendril.utils.types.electromagnetic import Capacitance
@@ -191,11 +191,11 @@ class CustomCapacitorSeries(CompositeSeriesDefinition):
     _generator_dimensions = ['capacitance']
 
 
-class CustomResistorSeriesSet(SchemaObjectSet):
+class CustomResistorSeriesSet(SchemaObjectMapping):
     _objtype = CustomResistorSeries
 
 
-class CustomCapacitorSeriesSet(SchemaObjectSet):
+class CustomCapacitorSeriesSet(SchemaObjectMapping):
     _objtype = CustomCapacitorSeries
 
 

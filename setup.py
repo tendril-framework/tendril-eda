@@ -18,6 +18,7 @@ requirements = [
     'arrow',
     'iec60063',
     'tendril-schema',
+    'tendril-projects',
     'tendril-validation>=0.1.5',
     'tendril-conventions-electronics>=0.1.1',
     'tendril-conventions-status',

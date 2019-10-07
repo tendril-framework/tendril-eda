@@ -26,7 +26,7 @@ from tendril.config import EDA_LIBRARY_FUSION
 from tendril.config import EDA_LIBRARY_PRIORITY
 
 from tendril.validation.base import ValidationContext
-from tendril.utils.fsutils import get_namespace_package_names
+from tendril.utils.versions import get_namespace_package_names
 from tendril.utils import log
 logger = log.get_logger(__name__, log.DEFAULT)
 

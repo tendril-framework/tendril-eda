@@ -31,7 +31,7 @@ from tendril.conventions.electronics import jb_tools_for_ident
 
 from tendril.validation.base import ValidatableBase
 from tendril.entities.edasymbols.base import EDASymbolBase
-from tendril.entities.edasymbols.base import EDASymbolGeneratorBase
+from tendril.schema.edasymbols import EDASymbolGeneratorBase
 from tendril.utils.fsutils import VersionedOutputFile
 from tendril.utils.types import ParseException
 
