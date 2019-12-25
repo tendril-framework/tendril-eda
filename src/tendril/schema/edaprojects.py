@@ -30,7 +30,7 @@ from tendril.validation.configs import ConfigOptionPolicy
 from tendril.conventions.status import Status
 
 from tendril.schema.base import NakedSchemaObject
-from tendril.entities.projects.config import ProjectConfig
+from tendril.schema.projects.config import ProjectConfig
 
 
 class IndicativePCBOrderSpec(NakedSchemaObject):
