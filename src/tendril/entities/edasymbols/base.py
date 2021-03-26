@@ -32,7 +32,7 @@ from tendril.conventions.electronics import fpismodlen
 from tendril.validation.base import ValidatableBase
 from tendril.utils.types.lengths import Length
 
-from .generator import EDASymbolGeneratorBase
+from tendril.schema import EDASymbolGeneratorBase
 
 
 class EDASymbolBase(ValidatableBase):
