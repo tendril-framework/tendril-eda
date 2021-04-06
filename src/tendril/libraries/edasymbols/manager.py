@@ -28,7 +28,7 @@ from tendril.config import EDA_LIBRARY_PRIORITY
 from tendril.validation.base import ValidationContext
 from tendril.utils.versions import get_namespace_package_names
 from tendril.utils import log
-logger = log.get_logger(__name__, log.DEFAULT)
+logger = log.get_logger(__name__, log.DEBUG)
 
 
 class EDALibraryManager(object):
@@ -49,8 +49,10 @@ class EDALibraryManager(object):
                 continue
             m = importlib.import_module(m_name)
             m.load(self)
+        logger.debug("Done loading EDA library modules from {0}".format(self._prefix))
 
     def install_library(self, name, library):
+        logger.debug("Installing EDA library module {0}".format(name))
         self._libraries[name] = library
 
     def install_exc_class(self, name, exc_class):

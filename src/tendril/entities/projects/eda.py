@@ -37,3 +37,7 @@ class EDAProject(ProjectBase):
     @property
     def is_cable(self):
         return self.config.is_cable
+    
+    @property
+    def modules(self):
+        return 
